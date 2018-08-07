@@ -11,8 +11,9 @@ import UIKit
 class MaterialsVC : UIViewController{
     
     let lessons = LessonsArray()
-    
     var myString = String()
+    let detectMaterial = Constants.detectSections.self
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,25 +59,47 @@ class MaterialsVC : UIViewController{
             if identifier == "toLessonsSection" {
             let lessonsController = segue.destination as! LessonsVC
                 if navigationItem.title == "Math"{
-                    lessonsController.detectSection = 1
+                    lessonsController.detectSection = detectMaterial.math
     }
                 else if navigationItem.title == "Arabic" {
-                    lessonsController.detectSection = 2
+                    lessonsController.detectSection = detectMaterial.arabic
      }
                 else if navigationItem.title == "Chemistry"{
-                    lessonsController.detectSection = 3
+                    lessonsController.detectSection = detectMaterial.chemistry
                 }
                 else if navigationItem.title == "Physics"{
-                    lessonsController.detectSection = 4
+                    lessonsController.detectSection = detectMaterial.physics
                 }
                 else if navigationItem.title == "English"{
-                    lessonsController.detectSection = 5
+                    lessonsController.detectSection = detectMaterial.english
                 }
                 else if navigationItem.title == "French"{
-                    lessonsController.detectSection = 6
+                    lessonsController.detectSection = detectMaterial.french
                 }
                 
     }
+            if identifier == "toQuizesSection" {
+                let quizesController = segue.destination as! QuizesVC
+                if navigationItem.title == "Math"{
+                    quizesController.detectSection = detectMaterial.math
+                }
+                else if navigationItem.title == "Arabic" {
+                    quizesController.detectSection = detectMaterial.arabic
+                }
+                else if navigationItem.title == "Chemistry"{
+                    quizesController.detectSection = detectMaterial.chemistry
+                }
+                else if navigationItem.title == "Physics"{
+                    quizesController.detectSection = detectMaterial.physics
+                }
+                else if navigationItem.title == "English"{
+                    quizesController.detectSection = detectMaterial.english
+                }
+                else if navigationItem.title == "French"{
+                    quizesController.detectSection = detectMaterial.french
+                }
+                
+            }
     }
     }
 }

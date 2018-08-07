@@ -20,6 +20,7 @@
 		DD366B382104C54700631DDC /* MaterialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B372104C54700631DDC /* MaterialsVC.swift */; };
 		DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB372114CDB900867BBB /* QuizesArray.swift */; };
 		DDCCAB3A2114D15A00867BBB /* QuizesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB392114D15A00867BBB /* QuizesVC.swift */; };
+		DDCCAB3E2119DA1A00867BBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB3D2119DA1A00867BBB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DD366B372104C54700631DDC /* MaterialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsVC.swift; sourceTree = "<group>"; };
 		DDCCAB372114CDB900867BBB /* QuizesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesArray.swift; sourceTree = "<group>"; };
 		DDCCAB392114D15A00867BBB /* QuizesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesVC.swift; sourceTree = "<group>"; };
+		DDCCAB3D2119DA1A00867BBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +113,12 @@
 			children = (
 				DD366B0220FE51CA00631DDC /* AppDelegate.swift */,
 				DD366B362103169300631DDC /* ViewController */,
-				DD366B322100DE3000631DDC /* LessonsArray.swift */,
-				DDCCAB372114CDB900867BBB /* QuizesArray.swift */,
+				DDCCAB3B2119D9A400867BBB /* Arrays */,
+				DDCCAB3C2119D9EC00867BBB /* Supporting File */,
 				DD366B0620FE51CB00631DDC /* Main.storyboard */,
 				DD366B0920FE51CD00631DDC /* Assets.xcassets */,
-				DD366B0B20FE51CD00631DDC /* LaunchScreen.storyboard */,
 				DD366B0E20FE51CD00631DDC /* Info.plist */,
+				DD366B0B20FE51CD00631DDC /* LaunchScreen.storyboard */,
 			);
 			path = "Student Guide Syria";
 			sourceTree = "<group>";
@@ -149,6 +151,23 @@
 				DD366B302100D45000631DDC /* PDFDisplayVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DDCCAB3B2119D9A400867BBB /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				DD366B322100DE3000631DDC /* LessonsArray.swift */,
+				DDCCAB372114CDB900867BBB /* QuizesArray.swift */,
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		DDCCAB3C2119D9EC00867BBB /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				DDCCAB3D2119DA1A00867BBB /* Constants.swift */,
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +309,7 @@
 				DD366B332100DE3000631DDC /* LessonsArray.swift in Sources */,
 				DD366B382104C54700631DDC /* MaterialsVC.swift in Sources */,
 				DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */,
+				DDCCAB3E2119DA1A00867BBB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

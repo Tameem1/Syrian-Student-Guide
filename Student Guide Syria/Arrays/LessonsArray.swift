@@ -14,7 +14,8 @@ class LessonsArray {
     var mathLessons  = [[Lesson(url: URL(string: "https://www.google.com/")!, title: "1", papers: URL(string: "https://www.facebook.com/")!)],
                         [Lesson(url: URL(string: "https://www.google.com/")!, title: "2", papers: URL(string: "https://www.facebook.com/")!)],
                         [Lesson(url: URL(string: "https://www.google.com/")!, title: "3", papers: URL(string: "https://www.facebook.com/")!)],
-                        [Lesson(url: URL(string: "https://www.google.com/")!, title: "4", papers: URL(string: "https://www.facebook.com/")!)]]
+                        [Lesson(url: URL(string: "https://www.google.com/")!, title: "4", papers: URL(string: "https://www.facebook.com/")!)],
+                        [Lesson(url: URL(string: "https://www.google.com/")!, title: "5", papers: URL(string: "https://www.facebook.com/")!)]]
     
     
     var arabicLessons = [[Lesson(url: URL(string: "https://www.google.com/")!, title: "1", papers: URL(string: "https://www.facebook.com/")!)],

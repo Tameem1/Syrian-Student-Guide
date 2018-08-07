@@ -14,7 +14,8 @@ class QuizesArray {
     [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
     [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
     [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-    [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
+    [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)],
+    [Quiz(title: "Quiz6", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
     ]
     var arabicQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
                         [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
