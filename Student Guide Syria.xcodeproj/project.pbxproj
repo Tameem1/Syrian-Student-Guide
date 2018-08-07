@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD366B0320FE51CA00631DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B0220FE51CA00631DDC /* AppDelegate.swift */; };
+		DD366B0520FE51CB00631DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B0420FE51CB00631DDC /* ViewController.swift */; };
+		DD366B0820FE51CB00631DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD366B0620FE51CB00631DDC /* Main.storyboard */; };
+		DD366B0A20FE51CD00631DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD366B0920FE51CD00631DDC /* Assets.xcassets */; };
+		DD366B0D20FE51CD00631DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD366B0B20FE51CD00631DDC /* LaunchScreen.storyboard */; };
+		DD366B1820FE51CE00631DDC /* Student_Guide_SyriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B1720FE51CE00631DDC /* Student_Guide_SyriaTests.swift */; };
+		DD366B2320FE51CE00631DDC /* Student_Guide_SyriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B2220FE51CE00631DDC /* Student_Guide_SyriaUITests.swift */; };
+		DD366B312100D45000631DDC /* PDFDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B302100D45000631DDC /* PDFDisplayVC.swift */; };
+		DD366B332100DE3000631DDC /* LessonsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B322100DE3000631DDC /* LessonsArray.swift */; };
+		DD366B352101D24300631DDC /* LessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B342101D24300631DDC /* LessonsVC.swift */; };
+		DD366B382104C54700631DDC /* MaterialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD366B372104C54700631DDC /* MaterialsVC.swift */; };
+		DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB372114CDB900867BBB /* QuizesArray.swift */; };
+		DDCCAB3A2114D15A00867BBB /* QuizesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB392114D15A00867BBB /* QuizesVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD366B1420FE51CE00631DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD366AF720FE51CA00631DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD366AFE20FE51CA00631DDC;
+			remoteInfo = "Student Guide Syria";
+		};
+		DD366B1F20FE51CE00631DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD366AF720FE51CA00631DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD366AFE20FE51CA00631DDC;
+			remoteInfo = "Student Guide Syria";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD366AFF20FE51CA00631DDC /* Student Guide Syria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Guide Syria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD366B0220FE51CA00631DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD366B0420FE51CB00631DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD366B0720FE51CB00631DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD366B0920FE51CD00631DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD366B0C20FE51CD00631DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD366B0E20FE51CD00631DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD366B1320FE51CE00631DDC /* Student Guide SyriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Guide SyriaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD366B1720FE51CE00631DDC /* Student_Guide_SyriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_Guide_SyriaTests.swift; sourceTree = "<group>"; };
+		DD366B1920FE51CE00631DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD366B1E20FE51CE00631DDC /* Student Guide SyriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Guide SyriaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD366B2220FE51CE00631DDC /* Student_Guide_SyriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_Guide_SyriaUITests.swift; sourceTree = "<group>"; };
+		DD366B2420FE51CE00631DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD366B302100D45000631DDC /* PDFDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDisplayVC.swift; sourceTree = "<group>"; };
+		DD366B322100DE3000631DDC /* LessonsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsArray.swift; sourceTree = "<group>"; };
+		DD366B342101D24300631DDC /* LessonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsVC.swift; sourceTree = "<group>"; };
+		DD366B372104C54700631DDC /* MaterialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsVC.swift; sourceTree = "<group>"; };
+		DDCCAB372114CDB900867BBB /* QuizesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesArray.swift; sourceTree = "<group>"; };
+		DDCCAB392114D15A00867BBB /* QuizesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD366AFC20FE51CA00631DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B1020FE51CE00631DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B1B20FE51CE00631DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD366AF620FE51CA00631DDC = {
+			isa = PBXGroup;
+			children = (
+				DD366B0120FE51CA00631DDC /* Student Guide Syria */,
+				DD366B1620FE51CE00631DDC /* Student Guide SyriaTests */,
+				DD366B2120FE51CE00631DDC /* Student Guide SyriaUITests */,
+				DD366B0020FE51CA00631DDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD366B0020FE51CA00631DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD366AFF20FE51CA00631DDC /* Student Guide Syria.app */,
+				DD366B1320FE51CE00631DDC /* Student Guide SyriaTests.xctest */,
+				DD366B1E20FE51CE00631DDC /* Student Guide SyriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD366B0120FE51CA00631DDC /* Student Guide Syria */ = {
+			isa = PBXGroup;
+			children = (
+				DD366B0220FE51CA00631DDC /* AppDelegate.swift */,
+				DD366B362103169300631DDC /* ViewController */,
+				DD366B322100DE3000631DDC /* LessonsArray.swift */,
+				DDCCAB372114CDB900867BBB /* QuizesArray.swift */,
+				DD366B0620FE51CB00631DDC /* Main.storyboard */,
+				DD366B0920FE51CD00631DDC /* Assets.xcassets */,
+				DD366B0B20FE51CD00631DDC /* LaunchScreen.storyboard */,
+				DD366B0E20FE51CD00631DDC /* Info.plist */,
+			);
+			path = "Student Guide Syria";
+			sourceTree = "<group>";
+		};
+		DD366B1620FE51CE00631DDC /* Student Guide SyriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD366B1720FE51CE00631DDC /* Student_Guide_SyriaTests.swift */,
+				DD366B1920FE51CE00631DDC /* Info.plist */,
+			);
+			path = "Student Guide SyriaTests";
+			sourceTree = "<group>";
+		};
+		DD366B2120FE51CE00631DDC /* Student Guide SyriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD366B2220FE51CE00631DDC /* Student_Guide_SyriaUITests.swift */,
+				DD366B2420FE51CE00631DDC /* Info.plist */,
+			);
+			path = "Student Guide SyriaUITests";
+			sourceTree = "<group>";
+		};
+		DD366B362103169300631DDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD366B0420FE51CB00631DDC /* ViewController.swift */,
+				DD366B372104C54700631DDC /* MaterialsVC.swift */,
+				DD366B342101D24300631DDC /* LessonsVC.swift */,
+				DDCCAB392114D15A00867BBB /* QuizesVC.swift */,
+				DD366B302100D45000631DDC /* PDFDisplayVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD366AFE20FE51CA00631DDC /* Student Guide Syria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD366B2720FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide Syria" */;
+			buildPhases = (
+				DD366AFB20FE51CA00631DDC /* Sources */,
+				DD366AFC20FE51CA00631DDC /* Frameworks */,
+				DD366AFD20FE51CA00631DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Student Guide Syria";
+			productName = "Student Guide Syria";
+			productReference = DD366AFF20FE51CA00631DDC /* Student Guide Syria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD366B1220FE51CE00631DDC /* Student Guide SyriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD366B2A20FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide SyriaTests" */;
+			buildPhases = (
+				DD366B0F20FE51CE00631DDC /* Sources */,
+				DD366B1020FE51CE00631DDC /* Frameworks */,
+				DD366B1120FE51CE00631DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD366B1520FE51CE00631DDC /* PBXTargetDependency */,
+			);
+			name = "Student Guide SyriaTests";
+			productName = "Student Guide SyriaTests";
+			productReference = DD366B1320FE51CE00631DDC /* Student Guide SyriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD366B1D20FE51CE00631DDC /* Student Guide SyriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD366B2D20FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide SyriaUITests" */;
+			buildPhases = (
+				DD366B1A20FE51CE00631DDC /* Sources */,
+				DD366B1B20FE51CE00631DDC /* Frameworks */,
+				DD366B1C20FE51CE00631DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD366B2020FE51CE00631DDC /* PBXTargetDependency */,
+			);
+			name = "Student Guide SyriaUITests";
+			productName = "Student Guide SyriaUITests";
+			productReference = DD366B1E20FE51CE00631DDC /* Student Guide SyriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD366AF720FE51CA00631DDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = tamem;
+				TargetAttributes = {
+					DD366AFE20FE51CA00631DDC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					DD366B1220FE51CE00631DDC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DD366AFE20FE51CA00631DDC;
+					};
+					DD366B1D20FE51CE00631DDC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DD366AFE20FE51CA00631DDC;
+					};
+				};
+			};
+			buildConfigurationList = DD366AFA20FE51CA00631DDC /* Build configuration list for PBXProject "Student Guide Syria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD366AF620FE51CA00631DDC;
+			productRefGroup = DD366B0020FE51CA00631DDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD366AFE20FE51CA00631DDC /* Student Guide Syria */,
+				DD366B1220FE51CE00631DDC /* Student Guide SyriaTests */,
+				DD366B1D20FE51CE00631DDC /* Student Guide SyriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD366AFD20FE51CA00631DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD366B0D20FE51CD00631DDC /* LaunchScreen.storyboard in Resources */,
+				DD366B0A20FE51CD00631DDC /* Assets.xcassets in Resources */,
+				DD366B0820FE51CB00631DDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B1120FE51CE00631DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B1C20FE51CE00631DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD366AFB20FE51CA00631DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD366B0520FE51CB00631DDC /* ViewController.swift in Sources */,
+				DD366B0320FE51CA00631DDC /* AppDelegate.swift in Sources */,
+				DD366B352101D24300631DDC /* LessonsVC.swift in Sources */,
+				DDCCAB3A2114D15A00867BBB /* QuizesVC.swift in Sources */,
+				DD366B312100D45000631DDC /* PDFDisplayVC.swift in Sources */,
+				DD366B332100DE3000631DDC /* LessonsArray.swift in Sources */,
+				DD366B382104C54700631DDC /* MaterialsVC.swift in Sources */,
+				DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B0F20FE51CE00631DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD366B1820FE51CE00631DDC /* Student_Guide_SyriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD366B1A20FE51CE00631DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD366B2320FE51CE00631DDC /* Student_Guide_SyriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD366B1520FE51CE00631DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD366AFE20FE51CA00631DDC /* Student Guide Syria */;
+			targetProxy = DD366B1420FE51CE00631DDC /* PBXContainerItemProxy */;
+		};
+		DD366B2020FE51CE00631DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD366AFE20FE51CA00631DDC /* Student Guide Syria */;
+			targetProxy = DD366B1F20FE51CE00631DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD366B0620FE51CB00631DDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD366B0720FE51CB00631DDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD366B0B20FE51CD00631DDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD366B0C20FE51CD00631DDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD366B2520FE51CE00631DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD366B2620FE51CE00631DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD366B2820FE51CE00631DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide Syria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-Syria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD366B2920FE51CE00631DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide Syria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-Syria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD366B2B20FE51CE00631DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide SyriaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-SyriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Guide Syria.app/Student Guide Syria";
+			};
+			name = Debug;
+		};
+		DD366B2C20FE51CE00631DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide SyriaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-SyriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Guide Syria.app/Student Guide Syria";
+			};
+			name = Release;
+		};
+		DD366B2E20FE51CE00631DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide SyriaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-SyriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Student Guide Syria";
+			};
+			name = Debug;
+		};
+		DD366B2F20FE51CE00631DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6S54BCF2;
+				INFOPLIST_FILE = "Student Guide SyriaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TameemDev.Student-Guide-SyriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Student Guide Syria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD366AFA20FE51CA00631DDC /* Build configuration list for PBXProject "Student Guide Syria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD366B2520FE51CE00631DDC /* Debug */,
+				DD366B2620FE51CE00631DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD366B2720FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide Syria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD366B2820FE51CE00631DDC /* Debug */,
+				DD366B2920FE51CE00631DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD366B2A20FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide SyriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD366B2B20FE51CE00631DDC /* Debug */,
+				DD366B2C20FE51CE00631DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD366B2D20FE51CE00631DDC /* Build configuration list for PBXNativeTarget "Student Guide SyriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD366B2E20FE51CE00631DDC /* Debug */,
+				DD366B2F20FE51CE00631DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD366AF720FE51CA00631DDC /* Project object */;
+}
