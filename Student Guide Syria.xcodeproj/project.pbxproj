@@ -21,6 +21,7 @@
 		DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB372114CDB900867BBB /* QuizesArray.swift */; };
 		DDCCAB3A2114D15A00867BBB /* QuizesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB392114D15A00867BBB /* QuizesVC.swift */; };
 		DDCCAB3E2119DA1A00867BBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB3D2119DA1A00867BBB /* Constants.swift */; };
+		DDCCAB42211B20CC00867BBB /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAB41211B20CC00867BBB /* QuestionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DDCCAB372114CDB900867BBB /* QuizesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesArray.swift; sourceTree = "<group>"; };
 		DDCCAB392114D15A00867BBB /* QuizesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesVC.swift; sourceTree = "<group>"; };
 		DDCCAB3D2119DA1A00867BBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DDCCAB41211B20CC00867BBB /* QuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				DD366B372104C54700631DDC /* MaterialsVC.swift */,
 				DD366B342101D24300631DDC /* LessonsVC.swift */,
 				DDCCAB392114D15A00867BBB /* QuizesVC.swift */,
+				DDCCAB41211B20CC00867BBB /* QuestionVC.swift */,
 				DD366B302100D45000631DDC /* PDFDisplayVC.swift */,
 			);
 			path = ViewController;
@@ -309,6 +312,7 @@
 				DD366B332100DE3000631DDC /* LessonsArray.swift in Sources */,
 				DD366B382104C54700631DDC /* MaterialsVC.swift in Sources */,
 				DDCCAB382114CDB900867BBB /* QuizesArray.swift in Sources */,
+				DDCCAB42211B20CC00867BBB /* QuestionVC.swift in Sources */,
 				DDCCAB3E2119DA1A00867BBB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

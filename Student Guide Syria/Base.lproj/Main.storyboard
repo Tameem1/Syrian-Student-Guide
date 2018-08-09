@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="width" constant="50" id="RcS-dq-thH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="arabic"/>
+                                <state key="normal" title="Arabic"/>
                                 <connections>
                                     <action selector="arabicButtonTapped:" destination="qWX-oP-bF0" eventType="touchUpInside" id="Hbr-wr-2t0"/>
                                     <segue destination="f3D-uf-fjg" kind="show" identifier="toArabicSection" id="NmI-tM-0uc"/>
@@ -199,7 +199,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eal-Os-nC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="-271"/>
+            <point key="canvasLocation" x="3657" y="-1278"/>
         </scene>
         <!--QuizesVC-->
         <scene sceneID="3u7-60-KZl">
@@ -217,9 +217,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="48H-z4-gFd" kind="show" id="kku-3g-0XI"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -230,12 +227,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKV-uS-heO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="393"/>
+            <point key="canvasLocation" x="3657" y="-271"/>
         </scene>
-        <!--View Controller-->
+        <!--QuestionVC-->
         <scene sceneID="au6-sN-2Zu">
             <objects>
-                <viewController id="48H-z4-gFd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toQuestionVC" id="48H-z4-gFd" customClass="QuestionVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3VN-2B-STC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +250,7 @@
                                 <state key="normal" title="A.Choice"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-qT-uFw">
-                                <rect key="frame" x="153" y="81" width="69" height="21"/>
+                                <rect key="frame" x="153" y="37" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,10 +272,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EmT-QC-oT6"/>
                     </view>
+                    <connections>
+                        <outlet property="choiceAButton" destination="0fC-UC-UWp" id="TGe-rC-AbW"/>
+                        <outlet property="choiceBButton" destination="fie-GI-Owq" id="OJw-Bn-Jfx"/>
+                        <outlet property="choiceCButton" destination="uos-iZ-fX0" id="qe3-4z-Dek"/>
+                        <outlet property="questionLabel" destination="lho-qT-uFw" id="bEu-QU-rT0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84j-V7-nxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4438" y="393"/>
+            <point key="canvasLocation" x="4420" y="-271"/>
         </scene>
         <!--DisplayVC-->
         <scene sceneID="VJx-fr-M5l">
@@ -312,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9Q-V1-IGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="-949.47526236881572"/>
+            <point key="canvasLocation" x="3657" y="-2057"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5u6-M4-GNj">
