@@ -35,84 +35,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-L0-fhb">
-                                <rect key="frame" x="163" y="93" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="fhy-EV-WGe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Math"/>
-                                <connections>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toMathSection" id="EFo-Dc-nT6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-Qc-E0v">
-                                <rect key="frame" x="163" y="152" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="RcS-dq-thH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Arabic"/>
-                                <connections>
-                                    <action selector="arabicButtonTapped:" destination="qWX-oP-bF0" eventType="touchUpInside" id="Hbr-wr-2t0"/>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toArabicSection" id="NmI-tM-0uc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-gJ-jf4">
-                                <rect key="frame" x="150" y="209" width="75" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="ReZ-ZE-SbH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Chemistry"/>
-                                <connections>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toChemistrySection" id="vLC-l6-cSk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-jm-mX3">
-                                <rect key="frame" x="162" y="255" width="50" height="30"/>
-                                <state key="normal" title="English"/>
-                                <connections>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toEnglishSection" id="VPr-J8-YBP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-5E-x1m">
-                                <rect key="frame" x="163" y="305" width="48" height="30"/>
-                                <state key="normal" title="French"/>
-                                <connections>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toFrenchSection" id="ds7-hY-iEV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQh-fp-EzP">
-                                <rect key="frame" x="162" y="354" width="52" height="30"/>
-                                <state key="normal" title="physics"/>
-                                <connections>
-                                    <segue destination="f3D-uf-fjg" kind="show" identifier="toPhysicsSection" id="2b1-rU-7eI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-df-RTC">
+                                <rect key="frame" x="152" y="81" width="70" height="520"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-L0-fhb">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="URg-bL-cZh"/>
+                                            <constraint firstAttribute="width" constant="70" id="Y1d-cj-0PW"/>
+                                        </constraints>
+                                        <state key="normal" title="Math" image="if_plus_511939 copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toMathSection" id="EFo-Dc-nT6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvn-ja-fC9">
+                                        <rect key="frame" x="0.0" y="90" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="jfI-ht-w3j"/>
+                                            <constraint firstAttribute="height" constant="70" id="xFO-XS-ihX"/>
+                                        </constraints>
+                                        <state key="normal" title="Arabic" image="language-script-arabic-512 copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toArabicSection" id="XgK-vl-eB5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPB-mh-yDb">
+                                        <rect key="frame" x="0.0" y="180" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="1D7-th-UqA"/>
+                                            <constraint firstAttribute="height" constant="70" id="jpU-FZ-OMf"/>
+                                        </constraints>
+                                        <state key="normal" title="Chem" image="if_chemistry-tube_1291759 copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toChemistrySection" id="3Oh-ZV-hqf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAw-PI-y29">
+                                        <rect key="frame" x="0.0" y="270" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="YhZ-jL-WJU"/>
+                                            <constraint firstAttribute="width" constant="70" id="aTE-dD-Z9w"/>
+                                        </constraints>
+                                        <state key="normal" title="phyisics" image="if_Streamline-40_185060 copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toPhysicsSection" id="xPP-aa-U8Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-73-mvu">
+                                        <rect key="frame" x="0.0" y="360" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="2fW-Pd-uQh"/>
+                                            <constraint firstAttribute="height" constant="70" id="vpP-kW-8hS"/>
+                                        </constraints>
+                                        <state key="normal" title="english" image="1200px-LetterE.svg copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toEnglishSection" id="Igs-jU-D7c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw3-hb-m1n">
+                                        <rect key="frame" x="0.0" y="450" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="wTC-nd-n5Y"/>
+                                            <constraint firstAttribute="height" constant="70" id="zUv-7M-k2L"/>
+                                        </constraints>
+                                        <state key="normal" title="French" image="LetterF.svg copy"/>
+                                        <connections>
+                                            <segue destination="f3D-uf-fjg" kind="show" identifier="toFrenchSection" id="xv0-0f-cfp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NV8-L0-fhb" firstAttribute="centerX" secondItem="v38-2a-Vl7" secondAttribute="centerX" id="Aeb-Py-ebx"/>
-                            <constraint firstItem="BMI-Qc-E0v" firstAttribute="leading" secondItem="KVJ-gJ-jf4" secondAttribute="leading" constant="12.5" id="BrV-OL-tDN"/>
-                            <constraint firstItem="UQh-fp-EzP" firstAttribute="top" secondItem="ORn-5E-x1m" secondAttribute="bottom" constant="19" id="FMp-DD-F4a"/>
-                            <constraint firstItem="e6d-jm-mX3" firstAttribute="top" secondItem="KVJ-gJ-jf4" secondAttribute="bottom" constant="16" id="Qxw-t9-VSH"/>
-                            <constraint firstItem="KVJ-gJ-jf4" firstAttribute="top" secondItem="BMI-Qc-E0v" secondAttribute="bottom" constant="27" id="Wpc-Je-4Yv"/>
-                            <constraint firstItem="e6d-jm-mX3" firstAttribute="leading" secondItem="UQh-fp-EzP" secondAttribute="leading" id="ZDm-jr-a9e"/>
-                            <constraint firstItem="ORn-5E-x1m" firstAttribute="top" secondItem="e6d-jm-mX3" secondAttribute="bottom" constant="20" id="bjt-Cp-Rwu"/>
-                            <constraint firstItem="BMI-Qc-E0v" firstAttribute="top" secondItem="NV8-L0-fhb" secondAttribute="bottom" constant="29" id="deh-D0-B6s"/>
-                            <constraint firstItem="NV8-L0-fhb" firstAttribute="top" secondItem="v38-2a-Vl7" secondAttribute="top" constant="29" id="g8n-Y0-hnE"/>
-                            <constraint firstItem="e6d-jm-mX3" firstAttribute="centerX" secondItem="KVJ-gJ-jf4" secondAttribute="centerX" id="h5U-Ur-Xlx"/>
-                            <constraint firstItem="ORn-5E-x1m" firstAttribute="leading" secondItem="BMI-Qc-E0v" secondAttribute="leading" id="qm9-IU-beh"/>
-                            <constraint firstItem="BMI-Qc-E0v" firstAttribute="centerX" secondItem="NV8-L0-fhb" secondAttribute="centerX" id="y8d-cA-nS8"/>
+                            <constraint firstItem="vSA-df-RTC" firstAttribute="centerX" secondItem="v38-2a-Vl7" secondAttribute="centerX" id="cIQ-o5-q4l"/>
+                            <constraint firstItem="vSA-df-RTC" firstAttribute="centerY" secondItem="v38-2a-Vl7" secondAttribute="centerY" id="hsJ-C2-H7H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v38-2a-Vl7"/>
                     </view>
                     <navigationItem key="navigationItem" id="NYV-6H-doU"/>
+                    <connections>
+                        <outlet property="arabicButton" destination="hvn-ja-fC9" id="gUG-DI-C1f"/>
+                        <outlet property="chemistryButton" destination="bPB-mh-yDb" id="kXO-7l-Elc"/>
+                        <outlet property="englishButton" destination="nz6-73-mvu" id="5wo-LK-gku"/>
+                        <outlet property="frenchButton" destination="uw3-hb-m1n" id="p6Z-ud-vbl"/>
+                        <outlet property="mathButton" destination="NV8-L0-fhb" id="RuU-bE-eHQ"/>
+                        <outlet property="physicsButton" destination="oAw-PI-y29" id="758-8M-tcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SML-rJ-UQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2132" y="-271.21439280359823"/>
+            <point key="canvasLocation" x="2132" y="-271.92118226600985"/>
         </scene>
         <!--MaterialsVC-->
         <scene sceneID="mVt-FO-GQs">
@@ -163,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiO-PI-RUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2866" y="-271"/>
+            <point key="canvasLocation" x="2897" y="-271"/>
         </scene>
         <!--LessonsVC-->
         <scene sceneID="wGC-JV-Sqv">
@@ -199,7 +219,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eal-Os-nC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="-1278"/>
+            <point key="canvasLocation" x="3657" y="-938"/>
         </scene>
         <!--QuizesVC-->
         <scene sceneID="3u7-60-KZl">
@@ -238,15 +258,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fie-GI-Owq">
-                                <rect key="frame" x="16" y="396" width="343" height="30"/>
+                                <rect key="frame" x="16" y="396.5" width="343" height="30"/>
                                 <state key="normal" title="B.Choice"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uos-iZ-fX0">
-                                <rect key="frame" x="16" y="477" width="343" height="30"/>
+                                <rect key="frame" x="16" y="477.5" width="343" height="30"/>
                                 <state key="normal" title="C.Choice"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-UC-UWp">
-                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
                                 <state key="normal" title="A.Choice"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-qT-uFw">
@@ -315,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9Q-V1-IGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="-2057"/>
+            <point key="canvasLocation" x="3657" y="-1608"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5u6-M4-GNj">
@@ -356,9 +376,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1200px-LetterE.svg copy" width="1200" height="1200"/>
+        <image name="LetterF.svg copy" width="1200" height="1200"/>
+        <image name="if_Streamline-40_185060 copy" width="512" height="512"/>
+        <image name="if_chemistry-tube_1291759 copy" width="477" height="512"/>
+        <image name="if_plus_511939 copy" width="256" height="256"/>
+        <image name="language-script-arabic-512 copy" width="512" height="512"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2b1-rU-7eI"/>
+        <segue reference="xv0-0f-cfp"/>
     </inferredMetricsTieBreakers>
 </document>

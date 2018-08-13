@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var mathButton: UIButton!
+    @IBOutlet var arabicButton: UIButton!
+    @IBOutlet var chemistryButton: UIButton!
+    @IBOutlet var englishButton: UIButton!
+    @IBOutlet var frenchButton: UIButton!
+    @IBOutlet var physicsButton: UIButton!
     
     let materials = MaterialsVC()
+    
     @IBAction func arabicButtonTapped(_ sender: Any) {
      
     }
@@ -20,6 +27,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mathButton.layer.cornerRadius = 35
+        arabicButton.layer.cornerRadius = 35
+        englishButton.layer.cornerRadius = 35
+        frenchButton.layer.cornerRadius = 35
+        chemistryButton.layer.cornerRadius = 35
+        physicsButton.layer.cornerRadius = 35
         
     }
 
