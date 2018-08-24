@@ -9,51 +9,130 @@
 import Foundation
 import UIKit
 
-class QuizesArray {
-    var mathQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-    [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "3", choiceC: "4", correctAnswer: 2)],
-    [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "7", choiceC: "4", correctAnswer: 3)],
-    [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-    [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)],
-    [Quiz(title: "Quiz6", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
-    var arabicQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-                        [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
-                        [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
-                        [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-                        [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
-    var chemistryQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-                           [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
-                           [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
-                           [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-                           [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
-    var physicsQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-                         [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
-                         [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
-                         [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-                         [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
-    var englishQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-                         [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
-                         [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
-                         [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-                         [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
-    var frenchQuizes = [[Quiz(title: "Quiz1", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 1)],
-                        [Quiz(title: "Quiz2", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 2)],
-                        [Quiz(title: "Quiz3", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 3)],
-                        [Quiz(title: "Quiz4", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 4)],
-                        [Quiz(title: "Quiz5", ques: "1+2", choiceA: "3", choiceB: "2", choiceC: "4", correctAnswer: 5)]
-    ]
+struct mathQuizesArray {
+    var list = [Quiz]()
     
+    init() {
+         list.append(Quiz( title: "1", quizNumber: 1 , image: "flag15" , ques: "Ru is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jaaica" , choiceB: "B. Sant incent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "2", quizNumber: 2 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "3", quizNumber: 3 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in he world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 4 , image: "flag15" , ques: "Rum is the national drink of this ountry. The fastest man in the orld Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 5 , image: "flag15" , ques: "Rum is the national drink of this countr. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Sait Vincent and the Grenadnes" , choiceC: "C. t. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+  
 }
+struct arabicQuizesArray {
+    var list = [Quiz]()
+    
+    init() {
+        list.append(Quiz( title: "1", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. arabic" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "2", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "3", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+}
+struct chemistryQuizesArray {
+    var list = [Quiz]()
+    
+    init() {
+        list.append(Quiz( title: "1", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. chemi" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "2", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "3", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+    }
+
+struct physicsQuizesArray {
+    var list = [Quiz]()
+    
+    init() {
+        list.append(contentsOf : [Quiz( title: "1", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. physics" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1)])
+        
+        list.append(contentsOf : [Quiz( title: "2", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1)])
+        
+        list.append(Quiz( title: "3", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+}
+struct englishQuizesArray {
+    var list = [Quiz]()
+    
+    init() {
+        list.append(Quiz( title: "1", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. english" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "2", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "3", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+}
+struct frenchQuizesArray {
+    var list = [Quiz]()
+    
+    init() {
+        list.append(Quiz( title: "1", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. french" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "2", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "3", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "4", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "5", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+        
+        list.append(Quiz( title: "6", quizNumber: 6 , image: "flag15" , ques: "Rum is the national drink of this country. The fastest man in the world Usain Bolt is from here.", choiceA: "A. Jamaica" , choiceB: "B. Saint Vincent and the Grenadines" , choiceC: "C. St. Lucia" , correctAnswer: 1))
+    }
+}
+
 struct Quiz {
-    var title : String
-    var ques : String
-    var choiceA : String
-    var choiceB : String
-    var choiceC : String
-    var correctAnswer : Int
+    var quizTitle : String
+    var quizNum : Int
+    var questionText : String
+    var optionA : String
+    var optionB : String
+    var optionC : String
+    var answer : Int
+    var questionImage : String
+//    var optionD : String
+    init(title: String, quizNumber : Int, image: String, ques: String, choiceA: String, choiceB: String, choiceC: String, correctAnswer: Int){
+        quizTitle = title
+        questionImage = image
+        quizNum = quizNumber
+        questionText = ques
+        optionA = choiceA
+        optionB = choiceB
+        optionC = choiceC
+        answer = correctAnswer
+////        optionD = choiceD
+    }
 }

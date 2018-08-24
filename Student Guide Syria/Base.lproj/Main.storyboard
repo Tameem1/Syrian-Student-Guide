@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="skV-Nu-MP0">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,27 +16,40 @@
             <objects>
                 <viewController id="ZJ1-V3-ktb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZoY-3q-ggB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coming-soon-page-builder" translatesAutoresizingMaskIntoConstraints="NO" id="afk-4b-jfW">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="792-4R-VB1"/>
+                                    <constraint firstAttribute="width" constant="200" id="THJ-0U-652"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="afk-4b-jfW" firstAttribute="centerY" secondItem="ZoY-3q-ggB" secondAttribute="centerY" id="AQo-aU-i0s"/>
+                            <constraint firstItem="afk-4b-jfW" firstAttribute="centerX" secondItem="ZoY-3q-ggB" secondAttribute="centerX" id="GLU-sH-3Ib"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bxt-Dv-xG8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="bXt-hI-1N8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVl-TC-Ci6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="393"/>
+            <point key="canvasLocation" x="1192.5" y="392.95774647887322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MVR-2h-Xb7">
             <objects>
                 <viewController id="qWX-oP-bF0" customClass="ViewController" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="naK-jd-n5V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-df-RTC">
-                                <rect key="frame" x="152" y="81" width="70" height="520"/>
+                                <rect key="frame" x="125" y="31.5" width="70" height="520"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-L0-fhb">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -111,6 +124,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,45 +153,52 @@
             <objects>
                 <viewController id="f3D-uf-fjg" customClass="MaterialsVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZA-uY-fWP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smV-Oi-04s">
-                                <rect key="frame" x="170" y="140" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smV-Oi-04s">
+                                <rect key="frame" x="142.5" y="137" width="35" height="30"/>
                                 <state key="normal" title="Book"/>
                                 <connections>
                                     <segue destination="Afl-iI-o9k" kind="show" identifier="toBooksSection" id="HkM-B2-RyY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYl-wf-vis">
-                                <rect key="frame" x="141" y="216" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYl-wf-vis">
+                                <rect key="frame" x="113.5" y="213" width="92" height="30"/>
                                 <state key="normal" title="Videolessons"/>
                                 <connections>
                                     <segue destination="QOF-vJ-e7e" kind="show" identifier="toLessonsSection" id="iqO-cm-Bex"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-J7-3sI">
-                                <rect key="frame" x="165" y="283" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-J7-3sI">
+                                <rect key="frame" x="137.5" y="280" width="45" height="30"/>
                                 <state key="normal" title="quizes"/>
                                 <connections>
                                     <segue destination="WKu-ct-m8t" kind="show" identifier="toQuizesSection" id="0th-eM-V5l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kN-sn-Hnl">
-                                <rect key="frame" x="163" y="344" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kN-sn-Hnl">
+                                <rect key="frame" x="135.5" y="341" width="48" height="30"/>
                                 <state key="normal" title="papers"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-2R-xne">
-                                <rect key="frame" x="159" y="404" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-2R-xne">
+                                <rect key="frame" x="131.5" y="401" width="56" height="30"/>
                                 <state key="normal" title="forums?"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wYl-wf-vis" firstAttribute="centerX" secondItem="FaL-J7-3sI" secondAttribute="centerX" id="7fX-tH-CHd"/>
+                            <constraint firstItem="6kN-sn-Hnl" firstAttribute="top" secondItem="FaL-J7-3sI" secondAttribute="bottom" constant="31" id="DFj-k1-5SZ"/>
+                            <constraint firstItem="FaL-J7-3sI" firstAttribute="top" secondItem="wYl-wf-vis" secondAttribute="bottom" constant="37" id="DlY-81-lBx"/>
+                            <constraint firstItem="fvr-2R-xne" firstAttribute="top" secondItem="6kN-sn-Hnl" secondAttribute="bottom" constant="30" id="bbd-gu-jwx"/>
+                            <constraint firstItem="6kN-sn-Hnl" firstAttribute="centerX" secondItem="fvr-2R-xne" secondAttribute="centerX" id="eXr-sn-5m8"/>
+                            <constraint firstItem="smV-Oi-04s" firstAttribute="centerX" secondItem="wYl-wf-vis" secondAttribute="centerX" id="fEs-SP-TnM"/>
+                            <constraint firstItem="FaL-J7-3sI" firstAttribute="centerX" secondItem="6kN-sn-Hnl" secondAttribute="centerX" id="ffJ-ke-lYE"/>
+                            <constraint firstItem="smV-Oi-04s" firstAttribute="centerX" secondItem="QZA-uY-fWP" secondAttribute="centerX" id="hKq-ct-Ank"/>
+                            <constraint firstItem="wYl-wf-vis" firstAttribute="top" secondItem="smV-Oi-04s" secondAttribute="bottom" constant="46" id="qIY-68-yxf"/>
+                            <constraint firstItem="smV-Oi-04s" firstAttribute="top" secondItem="bhV-Ti-JEl" secondAttribute="top" constant="73" id="u9O-YA-pfF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bhV-Ti-JEl"/>
                     </view>
                 </viewController>
@@ -190,15 +211,15 @@
             <objects>
                 <tableViewController id="QOF-vJ-e7e" customClass="LessonsVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CZ8-YR-HGc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="80" id="Owd-US-1HW" customClass="LessonsCell" customModule="Student_Guide_Syria" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Owd-US-1HW" id="R09-GQ-g3o">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNo-At-oFf">
@@ -219,24 +240,27 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eal-Os-nC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="-938"/>
+            <point key="canvasLocation" x="3756" y="-933"/>
         </scene>
         <!--QuizesVC-->
         <scene sceneID="3u7-60-KZl">
             <objects>
                 <tableViewController id="WKu-ct-m8t" customClass="QuizesVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2li-3b-RJL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuizesCell" id="Ild-bV-cJZ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ild-bV-cJZ" id="eTH-XN-4Tp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="48H-z4-gFd" kind="show" identifier="toQuestionVC" id="5Od-VR-T65"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -247,30 +271,60 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKV-uS-heO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="-271"/>
+            <point key="canvasLocation" x="3756" y="-271"/>
         </scene>
         <!--QuestionVC-->
         <scene sceneID="au6-sN-2Zu">
             <objects>
                 <viewController storyboardIdentifier="toQuestionVC" id="48H-z4-gFd" customClass="QuestionVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3VN-2B-STC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fie-GI-Owq">
-                                <rect key="frame" x="16" y="396.5" width="343" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fie-GI-Owq">
+                                <rect key="frame" x="16" y="347" width="288" height="30"/>
                                 <state key="normal" title="B.Choice"/>
+                                <connections>
+                                    <action selector="answerPressed:" destination="48H-z4-gFd" eventType="touchUpInside" id="Oi5-94-h3l"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uos-iZ-fX0">
-                                <rect key="frame" x="16" y="477.5" width="343" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uos-iZ-fX0">
+                                <rect key="frame" x="16" y="428" width="288" height="30"/>
                                 <state key="normal" title="C.Choice"/>
+                                <connections>
+                                    <action selector="answerPressed:" destination="48H-z4-gFd" eventType="touchUpInside" id="1So-fo-Un2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-UC-UWp">
-                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-UC-UWp">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
                                 <state key="normal" title="A.Choice"/>
+                                <connections>
+                                    <action selector="answerPressed:" destination="48H-z4-gFd" eventType="touchUpInside" id="guK-EM-8wS"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-qT-uFw">
-                                <rect key="frame" x="153" y="37" width="69" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-qT-uFw">
+                                <rect key="frame" x="3" y="64" width="320" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3p6-O2-F5B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJu-y9-aqI">
+                                <rect key="frame" x="16" y="152" width="69" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="7HB-cj-EfS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.61568627450000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjM-L1-0qN">
+                                <rect key="frame" x="238" y="155" width="66" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="bta-1U-1Ri"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -281,14 +335,20 @@
                             <constraint firstItem="uos-iZ-fX0" firstAttribute="top" secondItem="fie-GI-Owq" secondAttribute="bottom" constant="51" id="2op-yZ-JzG"/>
                             <constraint firstItem="fie-GI-Owq" firstAttribute="leading" secondItem="uos-iZ-fX0" secondAttribute="leading" id="575-Ds-wJA"/>
                             <constraint firstItem="0fC-UC-UWp" firstAttribute="leading" secondItem="3VN-2B-STC" secondAttribute="leadingMargin" id="7cj-yJ-7s7"/>
-                            <constraint firstItem="0fC-UC-UWp" firstAttribute="centerX" secondItem="lho-qT-uFw" secondAttribute="centerX" id="7kZ-UZ-qM5"/>
-                            <constraint firstItem="lho-qT-uFw" firstAttribute="top" secondItem="EmT-QC-oT6" secondAttribute="top" constant="17" id="FFV-HP-IAr"/>
+                            <constraint firstItem="gJu-y9-aqI" firstAttribute="top" secondItem="EmT-QC-oT6" secondAttribute="top" constant="88" id="DaA-dJ-0HD"/>
+                            <constraint firstItem="gJu-y9-aqI" firstAttribute="trailing" secondItem="0fC-UC-UWp" secondAttribute="trailing" constant="-219" id="JSd-hg-WBX"/>
                             <constraint firstItem="0fC-UC-UWp" firstAttribute="trailing" secondItem="3VN-2B-STC" secondAttribute="trailingMargin" id="RNm-Uj-pkj"/>
                             <constraint firstItem="fie-GI-Owq" firstAttribute="trailing" secondItem="uos-iZ-fX0" secondAttribute="trailing" id="Rgi-at-CFG"/>
+                            <constraint firstItem="lho-qT-uFw" firstAttribute="leading" secondItem="EmT-QC-oT6" secondAttribute="leading" constant="3" id="fcX-IN-QyA"/>
+                            <constraint firstItem="lho-qT-uFw" firstAttribute="top" secondItem="EmT-QC-oT6" secondAttribute="top" id="hY0-1C-sNZ"/>
                             <constraint firstItem="0fC-UC-UWp" firstAttribute="leading" secondItem="fie-GI-Owq" secondAttribute="leading" id="isJ-xs-qGq"/>
+                            <constraint firstItem="PjM-L1-0qN" firstAttribute="centerY" secondItem="gJu-y9-aqI" secondAttribute="centerY" constant="0.5" id="j0J-Vg-ykd"/>
                             <constraint firstItem="0fC-UC-UWp" firstAttribute="centerY" secondItem="3VN-2B-STC" secondAttribute="centerY" id="ocF-Y1-Kec"/>
                             <constraint firstItem="fie-GI-Owq" firstAttribute="top" secondItem="0fC-UC-UWp" secondAttribute="bottom" constant="48" id="sTP-n4-5nl"/>
                             <constraint firstItem="0fC-UC-UWp" firstAttribute="trailing" secondItem="fie-GI-Owq" secondAttribute="trailing" id="wH8-dj-Oyp"/>
+                            <constraint firstItem="PjM-L1-0qN" firstAttribute="leading" secondItem="0fC-UC-UWp" secondAttribute="leading" constant="222" id="x9l-e8-So9"/>
+                            <constraint firstItem="PjM-L1-0qN" firstAttribute="top" secondItem="EmT-QC-oT6" secondAttribute="top" constant="91" id="yER-28-YGe"/>
+                            <constraint firstItem="lho-qT-uFw" firstAttribute="trailing" secondItem="EmT-QC-oT6" secondAttribute="trailing" constant="3" id="zQS-tP-txu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EmT-QC-oT6"/>
                     </view>
@@ -296,23 +356,25 @@
                         <outlet property="choiceAButton" destination="0fC-UC-UWp" id="TGe-rC-AbW"/>
                         <outlet property="choiceBButton" destination="fie-GI-Owq" id="OJw-Bn-Jfx"/>
                         <outlet property="choiceCButton" destination="uos-iZ-fX0" id="qe3-4z-Dek"/>
+                        <outlet property="questionCounter" destination="PjM-L1-0qN" id="O84-F2-0j3"/>
                         <outlet property="questionLabel" destination="lho-qT-uFw" id="bEu-QU-rT0"/>
+                        <outlet property="scoreLabel" destination="gJu-y9-aqI" id="hlT-tD-UA5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84j-V7-nxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4420" y="-271"/>
+            <point key="canvasLocation" x="4518.75" y="-271.47887323943661"/>
         </scene>
         <!--DisplayVC-->
         <scene sceneID="VJx-fr-M5l">
             <objects>
                 <viewController id="Afl-iI-o9k" customClass="PDFDisplayVC" customModule="Student_Guide_Syria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVb-oD-iGX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtv-ZF-N4B">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -335,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9Q-V1-IGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657" y="-1608"/>
+            <point key="canvasLocation" x="3756" y="393"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5u6-M4-GNj">
@@ -362,7 +424,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="tab_home_black" id="uJI-sx-vYe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yNY-qS-6qx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -378,6 +440,7 @@
     <resources>
         <image name="1200px-LetterE.svg copy" width="1200" height="1200"/>
         <image name="LetterF.svg copy" width="1200" height="1200"/>
+        <image name="coming-soon-page-builder" width="450" height="450"/>
         <image name="if_Streamline-40_185060 copy" width="512" height="512"/>
         <image name="if_chemistry-tube_1291759 copy" width="477" height="512"/>
         <image name="if_plus_511939 copy" width="256" height="256"/>

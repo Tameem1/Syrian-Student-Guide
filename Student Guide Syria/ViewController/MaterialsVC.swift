@@ -25,17 +25,18 @@ class MaterialsVC : UIViewController{
     
   override  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if let identifier = segue.identifier {
+            
+            
+            
+            
             if identifier == "toBooksSection" {
     let booksController = segue.destination as! PDFDisplayVC
         
         if navigationItem.title == "Math" {
             booksController.mathBookURL = URLRequest(url: booksController.mathBook!)
-            
-           
         }
         else if navigationItem.title == "Arabic" {
             booksController.arabicBookURL = URLRequest(url: booksController.arabicBook!)
-            
     }
         else if navigationItem.title == "Chemistry" {
             booksController.chemistryBookURL = URLRequest(url: booksController.chemistryBook!)
